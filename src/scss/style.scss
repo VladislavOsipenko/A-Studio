@@ -1,0 +1,20 @@
+@import "libs/slick";
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap");
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import "blocks/_header";
+
+    
+
