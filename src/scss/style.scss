@@ -1,20 +1,131 @@
 @import "libs/slick";
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap");
 
 * {
-    font-family: 'Inter', sans-serif;
-    font-family: 'Readex Pro', sans-serif;
+    font-family: 'proximanova_bold', sans-serif;
+    font-family: 'AvertaDemoPECuttedDemo-Regular', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+html {
+    box-sizing: border-box;
+    font-size: calc(100vw / 1440 * 10);
+    @media (max-width: 1024px) {
+        font-size: calc(100vw / 768 * 10);
+    }
+    @media (max-width: 767px) {
+        font-size: calc(100vw / 500 * 10);
+    }
+    @media (max-width: 500px) {
+        font-size: calc(100vw / 375 * 10);
+    }
+}
 
 .container {
-    width: 1140px;
+    width: 120rem;
+    max-width: 100%;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
+.fz_40 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+}
+
+.fz_24 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+}
+
+.fz_20 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.065em;
+    color: #FFFFFF;
+    border: 0.5px solid #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.fz_20-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.fz_20-menu {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.fz_18 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #757575;
+}
+
+.fz_16 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #565656;
+}
+
+.fz_16-2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #757575;
+}
+
+.fz_14 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: #565656;
+}
+
+.fz_14-2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    color: #000000;
+}
+
+.button {
+    width: 21.5rem;
+    height: 6.5rem;
+    background: #2639ED;
+    border-radius: 60px;
+}
+
 @import "blocks/_header";
+@import "blocks/_main";
+
 
     
 
