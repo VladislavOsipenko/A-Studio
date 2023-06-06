@@ -23,7 +23,7 @@ html {
 
 .container {
     width: 120rem;
-    max-width: 100%;
+    max-width: 98%;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -31,16 +31,16 @@ html {
 .fz_40 {
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 49px;
+    font-size: 4rem;
+    line-height: 4.9rem;
     color: #000000;
 }
 
 .fz_24 {
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 2.4rem;
+    line-height: 3rem;
     text-align: center;
     color: #000000;
 }
@@ -48,7 +48,7 @@ html {
 .fz_20 {
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 2.0rem;
     line-height: 25px;
     letter-spacing: 0.065em;
     color: #FFFFFF;
@@ -78,7 +78,7 @@ html {
 .fz_18 {
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 160%;
     color: #757575;
 }
@@ -86,7 +86,7 @@ html {
 .fz_16 {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 160%;
     color: #565656;
 }
@@ -117,14 +117,24 @@ html {
 }
 
 .button {
+    cursor: pointer;
     width: 21.5rem;
     height: 6.5rem;
     background: #2639ED;
     border-radius: 60px;
+    transition: 0.3s all;
+    transform: scale(1);
+    &:hover {
+        transition: .3s all;
+        transform: scale(1.05);
+        background: rgb(17, 17, 175);
+    }
 }
 
 @import "blocks/_header";
 @import "blocks/_main";
+@import "blocks/_client";
+@import "blocks/_help";
 
 
     

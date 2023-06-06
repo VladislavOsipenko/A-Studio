@@ -1,0 +1,117 @@
+.help {
+    
+    &__container {
+        position: relative;
+        width: 144rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        &:first-child {
+            position: relative;
+        }
+        &:last-child {
+            position: relative;
+            width: 104.7rem;
+            height: 61.9rem;
+            background: #F4F9FF;
+            border-radius: 150px 0px 0px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 3rem;
+        }
+    }
+
+    &__figure-1 {
+        position: absolute;
+        z-index: -1;
+        top: -7rem;
+        left: -3rem;
+        width: 17.8rem;
+        height: 17.8rem;
+        background: #FFF5DB;
+        border-radius: 0px 0px 100px 0px;
+        transform: rotate(-180deg);
+    }
+
+    &__title {
+        width: 36rem;
+    }
+
+    &__subtitle {
+        width: 40rem;
+        margin-top: 3rem;
+    }
+
+    &__figure-2 {
+        box-sizing: border-box;
+        position: absolute;
+        z-index: -1;
+        bottom: -6rem;
+        right: 18rem;
+        width: 12rem;
+        height: 12rem;
+        border: 0.8rem solid #FF007A;
+        border-radius: 100%;
+
+    }
+
+    &__box {
+        width: 30.8rem;
+        height: 37.9rem;
+        background: #FFFFFF;
+        border: 0.01rem solid #F2F2F2;
+        box-shadow: 0px 1rem 5rem rgba(0, 0, 0, 0.05);
+        border-radius: 4rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__icon-wrapper {
+        width: 12.1rem;
+        height: 12.1rem;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:nth-child(1) {
+            background: #F1F7FF;
+        }
+        &:nth-child(2) {
+            background: #FFF7E3;
+        }
+        &:nth-child(3) {
+            background: #FFF2F8;
+        }
+        &:nth-child(4) {
+            background: #DEFFEE;
+        }
+    }
+
+    &__icon {
+    }
+
+    &__box-title {
+    }
+
+    &__box-subtitle {
+    }
+
+    &__dots-wrapper-2 {
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        display: flex;
+    }
+}
+
+.dot {
+}
