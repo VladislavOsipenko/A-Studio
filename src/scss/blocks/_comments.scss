@@ -1,0 +1,134 @@
+.comments {
+    margin-top: 11.7rem;
+    &__container {
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-top: 1.7rem;
+        text-align: center;
+        
+    }
+
+    &__wrapper {
+        margin-top: 7rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        &:last-child {
+            padding-top: 8rem;
+
+        }
+    }
+
+    &__slider {
+    }
+
+    &__slider-item {
+    }
+
+    &__slider-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__slider-img {
+        position: relative;
+        width: 100%;
+    }
+
+    &__slider-figure {
+        box-sizing: border-box;
+        position: absolute;
+        width: 12rem;
+        height: 12rem;
+        border: 0.8rem solid #FF007A;
+        border-radius: 100%;
+        bottom: 9rem
+    }
+
+    &__dots-wrapper-3 {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+
+    &__slider-descr {
+        width: 68.2rem;
+        
+    }
+
+    &__slider-title {
+    }
+
+    &__slider-subtitle {
+        padding-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    &__item-wrapper {
+        position: relative;
+        width: 35rem;
+        height: 35rem;
+    }
+
+    &__item-figure {
+        left: 2rem;
+        top: 10.7rem;
+        position: absolute;
+        z-index: -1;
+        width: 18.4rem;
+        height: 18.4rem;
+        background: #FFF5DB;
+        border-radius: 100%;
+    }
+
+    &__item-icon {
+        &:nth-child(2) {
+            position: absolute;
+            top: 10.7rem;
+            right: 10.4rem;
+        }
+        &:nth-child(3) {
+            position: absolute;
+            top: 5rem;
+        }
+        &:nth-child(4) {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &:nth-child(5) {
+            position: absolute;
+            right: 4.5rem;
+            top: 6.3rem;
+        }
+        &:nth-child(6) {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:nth-child(7) {
+            position: absolute;
+            right: 5.4rem;
+            bottom: 6rem;
+        }
+        &:nth-child(8) {
+            position: absolute;
+            bottom: 0;
+            left: 9.8rem;
+        }
+        &:nth-child(9) {
+            position: absolute;
+            bottom: 8.4rem;
+            left: 0;
+        }
+
+    }
+}

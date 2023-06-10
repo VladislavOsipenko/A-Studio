@@ -24,6 +24,16 @@ document.addEventListener("DOMContentLoaded", function() {
             hamburger.classList.toggle('header__hamburger_active');
             menu.classList.toggle('header__menu_active');
         })
-    })
+    });
+
+    $('.comments__slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+        ]
+      });
 })
 

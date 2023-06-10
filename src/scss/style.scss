@@ -1,4 +1,4 @@
-@import "libs/slick";
+@import "libs/_slick";
 
 * {
     font-family: 'proximanova_bold', sans-serif;
@@ -23,7 +23,7 @@ html {
 
 .container {
     width: 120rem;
-    max-width: 98%;
+    max-width: 100%;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -41,7 +41,6 @@ html {
     font-weight: 400;
     font-size: 2.4rem;
     line-height: 3rem;
-    text-align: center;
     color: #000000;
 }
 
@@ -135,6 +134,8 @@ html {
 @import "blocks/_main";
 @import "blocks/_client";
 @import "blocks/_help";
+@import "blocks/_agency";
+@import "blocks/_comments";
 
 
     
