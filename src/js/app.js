@@ -1,3 +1,6 @@
+import "./jquery-3.6.3.js";
+import "./slick.min.js";
+
 import * as flsFunctions from "./modules/functions.js";
 
 flsFunctions.isWebp();
@@ -28,10 +31,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     $('.comments__slider').slick({
         dots: true,
+        arrows: false,
         infinite: true,
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 3000,
         responsive: [
         ]
       });

@@ -1,6 +1,7 @@
 .comments {
     margin-top: 11.7rem;
     &__container {
+        max-width: 97%;
     }
 
     &__title {
@@ -21,6 +22,7 @@
 
     &__item {
         &:last-child {
+            position: relative;
             padding-top: 8rem;
 
         }
@@ -130,5 +132,123 @@
             left: 0;
         }
 
+    }
+}
+.slick-dots {
+    position: absolute;
+    display: flex;
+    column-gap: 1.3rem;
+    font-size: 0;
+    top: 30rem;
+    left: 43rem;
+
+    li {
+        cursor: pointer;
+        text-decoration: none;
+        list-style-type: none;
+        width: 1.6rem;
+        height: 1.6rem;
+        border: none;
+        border-radius: 100%;
+        background: #E7F0FC;
+        transition: .3s all;
+        &:hover {
+            transition: .3s all;
+            background: #cae1ff;
+        }
+        button {
+            border: none;
+            list-style-type: none;
+            font-size: 0;
+        }
+    }
+    .slick-active {
+        width: 1.6rem;
+        height: 1.6rem;
+        border: none;
+        border-radius: 100%;
+        background: #2639ED;
+        &:hover {
+            transition: .3s all;
+            background: #1c2aae;;
+        }
+    }
+}
+.slick-slider {
+
+}
+.slick-list {
+    position: relative;
+    width: 79.9rem;
+}
+.slick-slide {
+    width: 80rem;
+    height: 44rem;
+}
+
+.slick-current {
+    width: 80rem;
+}
+
+@media (max-width: 1024px) {
+    .comments {
+        &__wrapper {
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__item {
+            &:last-child {
+                padding-top: 0;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        &__slider-wrapper {
+            flex-direction: column;
+        }
+        
+        &__dots-wrapper-3 {
+            right: 1rem;
+        }
+        &__slider-descr {
+            width: 40rem;
+            padding-top: 2rem;
+        }
+
+    }
+    .slick-list {
+        width: 40rem;
+        margin: 0 auto;
+    }
+    .slick-slide {
+        height: 60rem;
+    }
+    .slick-dots {
+        top: 37rem;
+        left: 17rem;
+    }
+}
+@media (max-width: 768px) {
+    .comments {
+        &__dots-wrapper-3 {
+            right: 2rem;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .slick-list {
+        width: 35rem;
+    }
+    .comments {
+        &__slider-descr {
+            width: 35rem;
+        }
+        &__dots-wrapper-3 {
+            right: 0rem;
+        }
+    }
+    .slick-dots {
+        top: 33rem;
+        left: 11rem;
     }
 }
