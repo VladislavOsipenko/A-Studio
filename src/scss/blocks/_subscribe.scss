@@ -13,11 +13,17 @@
 
     &__subblock {
         position: absolute;
-        width: 54.3rem;
+        width: 0;
         height: inherit;
         right: 0;
         background: #2639ED;
         border-radius: 7.5rem 7.5rem 7.5rem 15rem;
+        transition: 1s all;
+        &._active {
+            width: 54.3rem;
+            opacity: 1;
+            transition: 1s all;
+        }
     }
 
     &__figure {
@@ -29,13 +35,28 @@
         height: 17.8rem;
         background: #FFF5DB;
         border-radius: 0px 0px 10rem 0px;
-        transform: rotate(90deg);
+        transform: rotate(90deg) scale(0);
+        transition: 2s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 2s all;
+            transform: rotate(90deg) scale(1);
+        }
     }
     &__dots-wrapper-3 {
         position: absolute;
         top: -4.5rem;
         right: -4.5rem;
         z-index: -1;
+        transition: 2s all;
+        transform: scale(0);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 2s all;
+            transform: scale(1);
+        }
         .main__dots {
             .subscribe__dot {
                 .dot {
@@ -57,12 +78,29 @@
     &__info {
         position: relative;
         z-index: 2;
+        overflow: hidden;
     }
 
     &__title {
+        transition: 1s all;
+        transform: translateX(-100%);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__subtitle {
+        transition: 1s all;
+        transform: translateX(-100%);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__forma {
@@ -101,7 +139,10 @@
             margin: 0 auto;
         }
         &__subblock {
-            width: 35rem;
+            &._active {
+                width: 35rem;
+            }
+            
         }
         &__wrapper {
             padding: 6rem;
@@ -125,7 +166,10 @@
             width: 40rem;
         }
         &__subblock {
-            width: 26rem;
+            &._active {
+                width: 26rem;
+            }
+            
         }
         &__input {
             width: 40rem;
@@ -148,7 +192,10 @@
             width: 30rem;
         }
         &__subblock {
-            width: 16rem;
+            &._active {
+                width: 16rem;
+            }
+            
         }
         &__input {
             width: 30rem;

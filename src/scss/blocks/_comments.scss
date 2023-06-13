@@ -1,17 +1,31 @@
 .comments {
     margin-top: 11.7rem;
     &__container {
-        max-width: 97%;
     }
 
     &__title {
         text-align: center;
+        transition: 1s all;
+        transform: scale(0);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: scale(1)
+        }
     }
 
     &__subtitle {
         margin-top: 1.7rem;
         text-align: center;
-        
+        transition: 1s all;
+        transform: scale(0);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: scale(1)
+        }
     }
 
     &__wrapper {
@@ -42,6 +56,17 @@
     &__slider-img {
         position: relative;
         width: 100%;
+        img {
+            transition: 1s all;
+            transform: scale(0);
+            opacity: 0;
+            &._active {
+                opacity: 1;
+                transition: 1s all;
+                transform: scale(1);
+            }
+        }
+        
     }
 
     &__slider-figure {
@@ -51,13 +76,29 @@
         height: 12rem;
         border: 0.8rem solid #FF007A;
         border-radius: 100%;
-        bottom: 9rem
+        bottom: 9rem;
+        transition: 2s all;
+        transform: translateY(100%);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 2s all;
+            transform: translateY(0);
+        }
     }
 
     &__dots-wrapper-3 {
         position: absolute;
         right: 0;
         z-index: -1;
+        transition: 2s all;
+        transform: scale(0);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 2s all;
+            transform: scale(1);
+        }
     }
 
     &__slider-descr {
@@ -66,11 +107,27 @@
     }
 
     &__slider-title {
+        transition: 1s all;
+        transform: scale(0);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: scale(1);
+        }
     }
 
     &__slider-subtitle {
         padding-top: 2rem;
         font-size: 1.5rem;
+        transition: 1s all;
+        transform: scale(0);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: scale(1);
+        }
     }
 
     &__item-wrapper {
@@ -88,9 +145,25 @@
         height: 18.4rem;
         background: #FFF5DB;
         border-radius: 100%;
+        transition: 1s all;
+        transform: scale(0);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 3s all;
+            transform: scale(1)
+        }
     }
 
     &__item-icon {
+        transition: 1s all;
+        transform: scale(0);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: scale(1)
+        }
         &:nth-child(2) {
             position: absolute;
             top: 10.7rem;

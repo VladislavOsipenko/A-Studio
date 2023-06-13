@@ -3,7 +3,9 @@
     &__container {
         width: 144rem;
     }
-
+    &__overflow {
+        overflow: hidden;
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -19,25 +21,59 @@
         }
         &:nth-child(2) {
             position: relative;
+            
         }
     }
 
     &__title {
         padding-top: 9rem;
+        transform: translateX(-100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__subtitle {
         width: 46rem;
         margin-top: 4rem;
+        transform: translateX(-100%);
+        transition: 1s all;
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__btn {
         margin-top: 3.3rem;
+        transition: 1s all;
+        transform: translateX(-100%);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__dots-wrapper {
         display: flex;
         margin-top: -3.5rem;
+        transition: 2s all;
+        transform: scale(0);
+        opacity: 0;
+        &._active {
+            z-index: -1;
+            opacity: 1;
+            transition: 2s all;
+            transform: scale(1);
+        }
     }
 
     &__dots {
@@ -50,13 +86,21 @@
 
     &__img {
         width: 100%;
+        transition: 1s all;
+        transform: translateX(100%);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
         img {
             width: 100%;
         }
     }
 
     &__figure-wrapper {
-
+        
     }
 
     &__figure-1 {
@@ -67,6 +111,14 @@
         height: 12.9rem;
         background: #DAE9FF;
         border-radius: 100%;
+        transition: 2s all;
+        transform: scale(0);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 2s all;
+            transform: scale(1);
+        }
     }
 
     &__figure-2 {
@@ -78,6 +130,14 @@
         height: 17.8rem;
         background: #FFF5DB;
         border-radius: 0px 0px 100px 0px;
+        transition: 2s all;
+        transform: scale(0);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 2s all;
+            transform: scale(1);
+        }
     }
 }
 

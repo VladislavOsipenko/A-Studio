@@ -2,7 +2,6 @@
     margin-top: 13rem;
 
     &__container {
-        max-width: 97%;
     }
 
     &__wrapper {
@@ -22,16 +21,44 @@
     }
 
     &__title {
+        transition: 1s all;
+        transform: translateX(-100%);
+        opacity: 0;
+        &._active {
+            z-index: -1;
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__subtitle {
         width: 33.6rem;
+        transition: 1s all;
+        transform: translateX(-100%);
+        opacity: 0;
+        &._active {
+            z-index: -1;
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__icon {
+        transition: 1s all;
+        transform: scale(0);
+        opacity: 0;
+        &._active {
+            z-index: -1;
+            opacity: 1;
+            transition: 1s all;
+            transform: scale(1);
+        }
         &:last-child {
             padding-top: 23px;
         }
+        
         img {
             width: 100%;
         }

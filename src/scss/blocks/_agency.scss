@@ -10,7 +10,7 @@
 
     &__item {
         &:last-child {
-            
+            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,6 +19,10 @@
 
     &__item-wrapper {
         position: relative;
+    }
+
+    &__overflow {
+        overflow: hidden;
     }
 
     &__figure-1 {
@@ -30,12 +34,29 @@
         height: 13rem;
         background: #FFF5DB;
         border-radius: 100%;
+        transition: 2s all;
+        transform: scale(0);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 2s all;
+            transform: scale(1)
+        }
     }
 
     &__img {
         position: relative;
+        
         img {
             width: 100%;
+            transition: 1s all;
+            transform: translateX(-100%);
+            opacity: 0;
+            &._active {
+                opacity: 1;
+                transition: 1s all;
+                transform: translateX(0);
+        }
         }
     }
 
@@ -51,14 +72,38 @@
         background: #EFF1FF;
         border-radius: 0px 0px 10rem 0px;
         z-index: -1;
+        transition: 2s all;
+        transform: scale(0);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 2s all;
+            transform: scale(1)
+        }
     }
 
     &__title {
+        transition: 1s all;
+        transform: translateX(100%);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 
     &__subtitle {
         padding-top: 3rem;
         width: 54rem;
+        transition: 1s all;
+        transform: translateX(100%);
+        opacity: 0;
+        &._active {
+            opacity: 1;
+            transition: 1s all;
+            transform: translateX(0);
+        }
     }
 }
 @media (max-width: 1024px) {
